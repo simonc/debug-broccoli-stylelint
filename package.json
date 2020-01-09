@@ -1,0 +1,40 @@
+{
+  "name": "pdfmonkey-static",
+  "version": "1.0.0",
+  "author": "PDFMonkey",
+  "scripts": {
+    "assets:build": "BROCCOLI_ENV=production yarn exec broccoli build assets --overwrite 2>&1 > /dev/null",
+    "assets:serve": "yarn exec broccoli serve"
+  },
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "broccoli": "^3.2.0",
+    "broccoli-asset-rev": "^3.0.0",
+    "broccoli-babel-transpiler": "^7.3.0",
+    "broccoli-cli": "^1.0.0",
+    "broccoli-env": "^0.0.1",
+    "broccoli-funnel": "^2.0.2",
+    "broccoli-lint-eslint": "^6.0.0",
+    "broccoli-merge-trees": "^3.0.2",
+    "broccoli-rollup": "^4.1.1",
+    "broccoli-sass-source-maps": "^4.0.0",
+    "broccoli-string-replace": "^0.1.2",
+    "broccoli-stylelint": "^3.0.2",
+    "rollup": "^1.21.4",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-uglify-es": "^0.0.1",
+    "sass": "^1.22.12",
+    "stylelint": "^11.0.0",
+    "stylelint-scss": "^3.11.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  }
+}
